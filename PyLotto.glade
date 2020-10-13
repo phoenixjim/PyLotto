@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkListStore" id="bets">
+    <columns>
+      <!-- column-name First -->
+      <column type="gchararray"/>
+      <!-- column-name Second -->
+      <column type="gchararray"/>
+      <!-- column-name Third -->
+      <column type="gchararray"/>
+      <!-- column-name Fourth -->
+      <column type="gchararray"/>
+      <!-- column-name Fifth -->
+      <column type="gchararray"/>
+      <!-- column-name Sixth -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">PyLotto</property>
+    <property name="default_width">400</property>
+    <property name="default_height">430</property>
+    <property name="gravity">center</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">center</property>
+                <property name="label" translatable="yes">Numbers</property>
+                <property name="width_chars">10</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">end</property>
+                <property name="label" translatable="yes">Bonus</property>
+                <property name="justify">right</property>
+                <property name="width_chars">15</property>
+                <property name="xalign">0.85000002384185791</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">4</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkEntry" id="num1">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="max_length">2</property>
+                <property name="width_chars">3</property>
+                <property name="input_purpose">number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="num2">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="max_length">2</property>
+                <property name="width_chars">3</property>
+                <property name="input_purpose">number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="num3">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="max_length">2</property>
+                <property name="width_chars">3</property>
+                <property name="input_purpose">number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="num4">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="max_length">2</property>
+                <property name="width_chars">3</property>
+                <property name="input_purpose">number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="num5">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="max_length">2</property>
+                <property name="width_chars">3</property>
+                <property name="input_purpose">number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="num6">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="max_length">2</property>
+                <property name="width_chars">3</property>
+                <property name="input_purpose">number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkEntry" id="num7">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">center</property>
+                <property name="max_length">2</property>
+                <property name="width_chars">3</property>
+                <property name="input_purpose">number</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="pack_type">end</property>
+                <property name="position">11</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <child>
+                  <object class="GtkTreeView" id="lstBets">
+                    <property name="name">lstBets</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="model">bets</property>
+                    <property name="headers_clickable">False</property>
+                    <property name="enable_search">False</property>
+                    <property name="show_expanders">False</property>
+                    <property name="enable_grid_lines">horizontal</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection"/>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnCheckNew">
+                <property name="label" translatable="yes">Check New</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <signal name="clicked" handler="check_new" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnSaveLatest">
+                <property name="label" translatable="yes">Save Latest</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <signal name="clicked" handler="save_latest" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnCheckLast10">
+                <property name="label" translatable="yes">Check Last 10</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <signal name="clicked" handler="checkLastTen" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnExit">
+                <property name="label" translatable="yes">Exit</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">center</property>
+                <signal name="clicked" handler="exit_app" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">7</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkListStore" id="liststore1"/>
+</interface>
